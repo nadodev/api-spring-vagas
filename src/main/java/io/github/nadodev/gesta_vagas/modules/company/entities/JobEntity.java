@@ -22,10 +22,10 @@ public class JobEntity {
     private String levels;
 
     @ManyToOne
-    @JoinColumn()
+    @JoinColumn(name = "company_id")
     private CompanyEntity companyEntity;
 
-    private UUID companyId;
+
 
     @CreationTimestamp
     private LocalDateTime createdAt;
