@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/candidate")
+@RequestMapping("/api/v1/candidate")
 public class CandidateController {
 
     @Autowired
     private CreateCandidateUseCase createUseCase;
 
-    @PostMapping("/")
+    @PostMapping("/create")
     public ResponseEntity<Object> create(@Valid @RequestBody CandidateEntity candidateEntity) {
        try {
            var result = this.createUseCase.execute(candidateEntity);

@@ -21,6 +21,10 @@ public class JobEntity {
     private String benefits;
     private String levels;
 
+    @ManyToOne
+    @JoinColumn()
+    private CompanyEntity companyEntity;
+
     private UUID companyId;
 
     @CreationTimestamp
