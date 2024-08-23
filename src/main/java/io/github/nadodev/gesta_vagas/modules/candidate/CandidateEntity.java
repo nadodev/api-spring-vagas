@@ -35,7 +35,7 @@ public class CandidateEntity {
 
 
     @CreatedDate
-    private LocalDateTime createdAt;
+    private LocalDateTime createdAt = LocalDateTime.now();
 
 
 
