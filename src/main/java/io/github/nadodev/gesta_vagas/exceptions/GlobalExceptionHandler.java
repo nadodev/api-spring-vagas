@@ -25,8 +25,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<List<ErrorMessageDTO>> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception) {
-        // TODO
-
         List<ErrorMessageDTO> dto = new ArrayList<>();
         exception.getBindingResult().getFieldErrors().forEach(error -> {
             String message = messageSource.getMessage(error, LocaleContextHolder.getLocale());
