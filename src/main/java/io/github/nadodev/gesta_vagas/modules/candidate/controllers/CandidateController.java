@@ -2,6 +2,7 @@ package io.github.nadodev.gesta_vagas.modules.candidate.controllers;
 
 
 import io.github.nadodev.gesta_vagas.modules.candidate.CandidateEntity;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ public class CandidateController {
 
 
     @PostMapping("/")
-    public void create(@RequestBody CandidateEntity candidateEntity) {
+    public void create(@Valid @RequestBody CandidateEntity candidateEntity) {
         System.out.println(candidateEntity);
     }
 }
