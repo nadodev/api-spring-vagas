@@ -1,7 +1,7 @@
 package io.github.nadodev.gesta_vagas.modules.candidate.useCases;
 
 import io.github.nadodev.gesta_vagas.exceptions.UserFoundExceptions;
-import io.github.nadodev.gesta_vagas.modules.candidate.CandidateEntity;
+import io.github.nadodev.gesta_vagas.modules.candidate.entities.CandidateEntity;
 import io.github.nadodev.gesta_vagas.modules.candidate.CandidateRepository;
 import org.springframework.stereotype.Service;
 

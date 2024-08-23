@@ -1,7 +1,7 @@
 package io.github.nadodev.gesta_vagas.modules.candidate.controllers;
 
 
-import io.github.nadodev.gesta_vagas.modules.candidate.CandidateEntity;
+import io.github.nadodev.gesta_vagas.modules.candidate.entities.CandidateEntity;
 import io.github.nadodev.gesta_vagas.modules.candidate.useCases.CreateCandidateUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
-package io.github.nadodev.gesta_vagas.modules.candidate;
+package io.github.nadodev.gesta_vagas.modules.candidate.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -34,8 +34,8 @@ public class CandidateEntity {
     private String curriculum;
 
 
-    @CreatedDate
-    private LocalDateTime createdAt = LocalDateTime.now();
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 
 
 
