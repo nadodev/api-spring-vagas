@@ -20,7 +20,7 @@
 
 ## 🚀 Endpoints
 
-- ` POST /api/v1/candidate/create ` - Cadastrar uma vaga
+- ` POST /candidate/create ` - Cadastrar uma vaga
 
 ```json
 {
@@ -29,5 +29,28 @@
   "email": "joao@hotmail.com",
   "password": "1234",
   "description": "desenvolvedor java"
+}
+```
+
+- ` POST /company/create ` - Cadastrar uma Empresa
+
+```json
+{
+  "username": "Empresa",
+  "name": "usuario Empresa",
+  "email": "empresa@hotmail.com",
+  "password": "1234",
+  "description": "desenvolvedor java"
+}
+```
+
+- ` POST /job/create ` - Cadastrar um Vaga
+
+```json
+{
+  "description": "teste",
+  "benefits": "Vale Alimentação",
+  "levels": "Senior",
+  "companyId": 1
 }
 ```
