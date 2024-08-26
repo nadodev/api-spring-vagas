@@ -14,8 +14,8 @@ import java.util.UUID;
 public class JobEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String description;
     private String benefits;
@@ -27,7 +27,7 @@ public class JobEntity {
 
 
     @Column(name = "company_id")
-    private UUID companyId;
+    private Long companyId;
 
     @CreationTimestamp
     private LocalDateTime createdAt;

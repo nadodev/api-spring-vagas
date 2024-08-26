@@ -17,8 +17,8 @@ import java.util.UUID;
 public class CompanyEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @NotBlank
     @Pattern(regexp = "\\S+", message = "O campo [Username] não pode conter espaços em branco")
